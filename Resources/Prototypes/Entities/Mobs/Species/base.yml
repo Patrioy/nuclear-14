@@ -188,7 +188,8 @@
   - type: SleepEmitSound
   - type: SSDIndicator
   - type: StandingState
-  - type: SpeechSynthesis # Corvax-Fallout-Barks
+  - type: SpeechSynthesis # Forge-Fallout-Barks
+  - type: CameraFollow # Forge-Change
   - type: Fingerprint
   - type: Dna
   - type: Scent

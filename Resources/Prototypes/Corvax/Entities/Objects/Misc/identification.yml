@@ -1,4 +1,4 @@
-# Legion
+#MARK: Legion
 - type: entity
   parent: N14IDPassportBlank
   id: N14IDLegionaryBadge
@@ -103,7 +103,7 @@
   - type: PresetIdCard
     job: BoSWashingtonInitiate
 
-# Washington BoS
+#MARK: Washington BoS
 
 - type: entity
   parent: N14IDPassportBlank
@@ -169,3 +169,70 @@
     state: bos_holotag
   - type: PresetIdCard
     job: BoSWashingtonCommander
+
+#MARK: Key
+- type: entity
+  parent: N14IDCard
+  id: N14IDKeyIronEmpty
+  name: iron key
+  description: A worn out iron key. I wonder where it goes?
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: iron
+
+#MARK: Brotherhood West
+- type: entity
+  parent: N14IDPassportBlank
+  id: N14IDBrotherhoodWestHolotag
+  name: holotag (scribe)
+  description: An ID holotag worn by the Brotherhood of Steel.
+  suffix: West Scribe
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: bos_holotag
+  - type: PresetIdCard
+    job: BoSWestScribe
+  - type: ClothingAddFaction
+    faction: BrotherhoodWest
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagGunsmith
+  name: holotag (gunsmith)
+  description: An ID holotag worn by the Brotherhood of Steel.
+  suffix: West Gunsmith
+  components:
+  - type: PresetIdCard
+    job: BoSWestGunsmith
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagKnight
+  name: holotag (knight)
+  description: An ID holotag worn by the Brotherhood of Steel.
+  suffix: West Knight
+  components:
+  - type: PresetIdCard
+    job: BoSWestKnight
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagPaladin
+  name: holotag (paladin)
+  description: An ID holotag worn by the Paladins of the Brotherhood of Steel.
+  suffix: West Paladin
+  components:
+  - type: PresetIdCard
+    job: BoSWestPaladin
+
+- type: entity
+  parent: N14IDBrotherhoodWestHolotag
+  id: N14IDBrotherhoodWestHolotagElderCommander
+  name: holotag (eldercommander)
+  description: An ID holotag worn by the Paladin Commander of the Brotherhood of Steel.
+  suffix: West Commander
+  components:
+  - type: PresetIdCard
+    job: BoSWestElderCommander

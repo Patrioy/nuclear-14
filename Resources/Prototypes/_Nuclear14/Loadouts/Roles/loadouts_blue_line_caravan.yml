@@ -28,3 +28,20 @@
 
 
 
+#Corvax-Add Start
+
+# Tools
+- type: loadout
+  id: LoadoutBlueLineCCTradeCatalog
+  category: Items
+  cost: 2
+  exclusive: true
+  requirements:
+  - !type:CharacterJobRequirement
+      jobs:
+        - CaravanLeader
+        - CaravanTrader
+  items:
+    - N14ToolsTradeCatalog
+
+#Corvax-Add End
