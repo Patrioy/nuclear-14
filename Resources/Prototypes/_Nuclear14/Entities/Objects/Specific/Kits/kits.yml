@@ -1031,11 +1031,11 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle556CarbineOld
-      - id: N14WeaponLaserPistol
+      - id: N14WeaponRifle556R91 # Forge-Change
+      - id: N14WeaponPistol10mm # Forge-Change
       - id: Magazine556Rifle
         amount: 3
-      - id: N14PowerCellSmall
+      - id: N14MagazinePistol10mm # Forge-Change
         amount: 2
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled

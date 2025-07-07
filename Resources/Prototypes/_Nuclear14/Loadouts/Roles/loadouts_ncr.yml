@@ -201,9 +201,9 @@
   requirements:
     - !type:CharacterJobRequirement
       jobs:
-        - NCRLT
+        - NCRMedic # Forge-Change
     - !type:CharacterPlaytimeRequirement
-      tracker: NCROfficer
+      tracker: NCRDoctor # Forge-Change
       min: 72000 # 20 hours veterancy unlock
   items:
     - ClothingNeckPinNCRChiefPhysician

@@ -15,7 +15,7 @@
       min: 3600
   startingGear: BoSMidSquireGear
   alwaysUseSpawner: true
-  icon: "JobIconBosMSquire" # Corvax-Change
+  icon: "JobIconBosMSquire" # Forge-Change
   supervisors: job-supervisors-bos-mid-initiate
   canBeAntag: false
   access:
@@ -31,14 +31,14 @@
   id: BoSMidSquireGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitBOSGreen
-    back: N14ClothingBackpackMilitary # Corvax-Change
+    back: N14ClothingBackpackMilitary # Forge-Change
     shoes: N14ClothingBootsCombatFilled
     head: N14ClothingHeadHatArmyCap
     outerClothing: N14ClothingOuterMidwestArmor
-    pocket1: NCRBoSMidwestkits
+    pocket1: N14BoSMidwestSquirekits
     id: N14IDBrotherhoodHolotagSquire
     belt: ClothingBeltMilitary
-  storage: # Corvax-Change
+  storage: # Forge-Change
     back:
     - N14BoxPlasticFilledMilitary
 

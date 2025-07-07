@@ -1148,6 +1148,8 @@
   components:
     - type: StorageFill
       contents:
+        - id: Matchbox # Forge-Add
+          prob: 0.05
         - id: N14Ethanol
           prob: 0.05
         - id: Pen
@@ -1390,20 +1392,11 @@
         - id: N14ClothingBootsLeather
           prob: 0.05
           orGroup: Clothing
-        - id: MagazineBox556
-          prob: 0.05
-          orGroup: Ammunition
         - id: Magazine762Rifle
           prob: 0.07
           orGroup: Ammunition
-        - id: MagazineBox762
-          prob: 0.05
-          orGroup: Ammunition
         - id: N14MagazinePistol9mm
           prob: 0.1
-          orGroup: Ammunition
-        - id: MagazineBox9mm
-          prob: 0.07
           orGroup: Ammunition
         - id: N14MagazinePistol10mm
           prob: 0.1
@@ -1411,50 +1404,23 @@
         - id: N14MagazineSMG10mm
           prob: 0.07
           orGroup: Ammunition
-        - id: MagazineBox10mm
-          prob: 0.05
-          orGroup: Ammunition
         - id: N14MagazinePistol12mm
           prob: 0.07
           orGroup: Ammunition
         - id: N14MagazineSMG12mm
           prob: 0.07
           orGroup: Ammunition
-        - id: MagazineBox12
-          prob: 0.05
-          orGroup: Ammunition
         - id: N14MagazineShotgun12
           prob: 0.07
-          orGroup: Ammunition
-        - id: MagazineBox12gauge
-          prob: 0.05
           orGroup: Ammunition
         - id: N14MagazineShotgun20
           prob: 0.07
           orGroup: Ammunition
-        - id: MagazineBox20gauge
-          prob: 0.05
-          orGroup: Ammunition
         - id: N14MagazinePistol22lr
           prob: 0.07
           orGroup: Ammunition
-        - id: MagazineBox22
-          prob: 0.05
-          orGroup: Ammunition
         - id: N14MagazinePistol45
           prob: 0.07
-          orGroup: Ammunition
-        - id: MagazineBox45
-          prob: 0.05
-          orGroup: Ammunition
-        - id: MagazineBox44
-          prob: 0.05
-          orGroup: Ammunition
-        - id: MagazineBox45
-          prob: 0.05
-          orGroup: Ammunition
-        - id: MagazineBox308
-          prob: 0.05
           orGroup: Ammunition
         - id: LongMagazine556Rifle
           prob: 0.07
