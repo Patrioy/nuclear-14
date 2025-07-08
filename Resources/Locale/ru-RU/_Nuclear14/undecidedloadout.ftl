@@ -178,8 +178,8 @@ undecided-loadout-category-bos-plasma-description =
     Содержит: плазменную винтовку, плазменный пистолет, 4 плазменных батареи,
     стимулятор и сухпаёк.
 
-undecided-loadout-category-bos-ballistics-name = Штурмовой набор Командира Братства Стали
-undecided-loadout-category-bos-ballistics-description =набор
+undecided-loadout-category-bos-ballistics-name = Штурмовой набор Братства Стали
+undecided-loadout-category-bos-ballistics-description =
     Ящик со снаряжением для лидера Братства Стали.
     Содержит: штурмовую винтовку, 3 магазина калибра 5,56 мм, пистолет калибра 12,7 мм,
     2 магазина для пистолета калибра 12,7 мм, коробку с патронами 5,56 мм, стимулятор и сухпаёк.

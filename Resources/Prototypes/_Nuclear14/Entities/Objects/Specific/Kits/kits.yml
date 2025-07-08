@@ -1177,13 +1177,12 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRifle556Carbine
-      - id: LongMagazine556Rifle
-        amount: 3
-      - id: N14WeaponPistol12mm
-      - id: N14MagazinePistol12mm
+      - id: N14WeaponLMGAutoRifle # Forge-Change
+      - id: Magazine308Rifle # Forge-Change
         amount: 2
-      - id: MagazineBox556
+      - id: N14WeaponPistol10mm # Forge-Change
+      - id: N14MagazinePistol10mm # Forge-Change
+        amount: 2
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
 
