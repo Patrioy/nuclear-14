@@ -181,8 +181,8 @@ undecided-loadout-category-bos-plasma-description =
 undecided-loadout-category-bos-ballistics-name = Штурмовой набор Братства Стали
 undecided-loadout-category-bos-ballistics-description =
     Ящик со снаряжением для лидера Братства Стали.
-    Содержит: штурмовую винтовку, 3 магазина калибра 5,56 мм, пистолет калибра 12,7 мм,
-    2 магазина для пистолета калибра 12,7 мм, коробку с патронами 5,56 мм, стимулятор и сухпаёк.
+    Содержит: автоматическую винтовку, 2 магазина калибра 308, пистолет калибра 10 мм,
+    2 магазина для пистолета калибра 10 мм, стимулятор и сухпаёк.
 
 undecided-loadout-category-bos-scribe-medic-name = Медицинский набор Скриптера Братства Стали
 undecided-loadout-category-bos-scribe-medic-description =
