@@ -484,6 +484,8 @@
   - type: PhysicalComposition
     materialComposition:
       Glass: 50
+  - type: StaticPrice # Forge-Add
+    price: 1
 
 #TODO: Needs a C# code to support its crafting
 # - type: entity
@@ -507,6 +509,7 @@
     graph: N14RadAwayPhial
     node: start
     defaultTarget: fill
+
 
 - type: entity
   parent: N14JunkItemBaseBreak
