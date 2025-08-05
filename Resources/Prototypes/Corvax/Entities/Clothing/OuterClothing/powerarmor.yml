@@ -126,6 +126,16 @@
   - type: Storage
     grid:
     - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
 
 - type: entity
   parent: N14ClothingOuterPowerArmorT45
