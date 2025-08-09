@@ -580,6 +580,8 @@
     state: passport
   - type: PresetIdCard
     job: WastelandChaplain
+  - type: ClothingAddFaction # Forge-Add
+    faction: Townsfolk
 
 # Wastelanders
 - type: entity

@@ -45,6 +45,9 @@
         acts: ["Destruction"]
   - type: Occluder
   - type: BlockWeather
+  - type: Construction # Forge-Change
+    graph: N14DoorGraph
+    node: MetalBlue
 
 - type: entity
   parent: N14DoorMetalBlueSlanted
@@ -58,6 +61,9 @@
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
+  - type: Construction # Forge-Change
+    graph: N14DoorGraph
+    node: MetalBlue
 
 - type: entity
   parent: N14DoorMetalBlueSlanted
@@ -69,6 +75,9 @@
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
+  - type: Construction # Forge-Change
+    graph: N14DoorGraph
+    node: MetalBlueAlt
 
 - type: entity
   parent: N14DoorMetalBlueSlanted
@@ -86,6 +95,11 @@
     occludes: false
   - type: Occluder
     enabled: false
+  - type: Construction # Forge-Change
+    graph: N14DoorGraph
+    node: MetalBlueWindow
+
+
 
 - type: entity
   parent: N14DoorMetalBlueWindowSlanted
@@ -185,6 +199,9 @@
             max: 2
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: Construction # Forge-Change
+    graph: N14DoorGraph
+    node: WoodDoor
 
 - type: entity
   parent: N14DoorWoodSlanted

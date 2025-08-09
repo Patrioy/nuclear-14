@@ -97,7 +97,7 @@
   - TownDeputy
   - TownDoctor
   - TownShopkeeper
-  - WastelandChaplain # Corvax-Change
+  - WastelandChaplain # Forge-Change
   - WastelandBartender # Moved from the Wastelander department, ID unchanged to avoid glitches for players who have it selected.
   - WastelandReporter # Moved from the Wastelander department, ID unchanged to avoid glitches for players who have it selected.
   - TownMechanic
