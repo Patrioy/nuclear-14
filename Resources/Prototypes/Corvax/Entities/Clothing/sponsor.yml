@@ -76,3 +76,55 @@
     sprite: Corvax/Clothing/Head/PowerArmorHelmets/hellCat.rsi
   - type: PointLight
     color: "#f80000"
+
+- type: entity
+  parent: N14ClothingUniformSkirtBase
+  id: N14ClothingUniformJumpskirtVault14Gold
+  categories: [ HideSpawnMenu ]
+  name: vault 14 skirt 
+  suffix: Gold
+  description: It's a vault skirt. It is gold-colored. It has a bright yellow 14 on the back.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Uniforms/FalloutSkirts/vault14dressgold.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Uniforms/FalloutSkirts/vault14dressgold.rsi
+
+- type: entity
+  parent: N14ClothingUniformSkirtBase
+  id: N14ClothingUniformJumpskirtVault14Purple
+  categories: [ HideSpawnMenu ]
+  name: vault 14 skirt
+  suffix: Purple
+  description: It's a vault skirt. It is purple-colored. It has a bright yellow 14 on the back.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Uniforms/FalloutSkirts/vault14dresspurple.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Uniforms/FalloutSkirts/vault14dresspurple.rsi
+
+- type: entity
+  parent: N14ClothingUniformBase
+  id: N14ClothingUniformJumpsuitVault14Gold
+  categories: [ HideSpawnMenu ]
+  name: vault 14 jumpsuit
+  suffix: Gold
+  description: A jumpsuit worn by the dwellers of a vault. It is gold-colored. It has a bright yellow 14 on the back.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/vaultsuit14gold.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/vaultsuit14gold.rsi
+
+- type: entity
+  parent: N14ClothingUniformBase
+  id: N14ClothingUniformJumpsuitVault14Purple
+  categories: [ HideSpawnMenu ]
+  name: vault 14 jumpsuit
+  suffix: Purple
+  description: A jumpsuit worn by the dwellers of a vault. It is purple-colored. It has a bright yellow 14 on the back.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/vaultsuit14purple.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Uniforms/Jumpsuit/vaultsuit14purple.rsi

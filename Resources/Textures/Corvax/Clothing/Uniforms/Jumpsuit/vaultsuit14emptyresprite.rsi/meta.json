@@ -8,18 +8,10 @@
   },
   "states": [
     {
-      "name": "inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "equipped-OUTERCLOTHING",
-      "directions": 4
-    },
-    {
       "name": "icon"
     },
     {
-      "name": "inhand-left",
+      "name": "equipped-INNERCLOTHING",
       "directions": 4
     }
   ]
