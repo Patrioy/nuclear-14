@@ -112,7 +112,7 @@
   category: Uniform
   cost: 2
   exclusive: true
-  sponsorLevel: 3
+  sponsorLevel: 2
   items:
     - N14ClothingUniformJumpsuitVault14Purple
   requirements:
