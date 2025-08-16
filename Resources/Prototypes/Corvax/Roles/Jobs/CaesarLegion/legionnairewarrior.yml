@@ -17,7 +17,7 @@
     gender: Male
   startingGear: CaesarLegionLegionnaireWarriorGear
   alwaysUseSpawner: true
-  icon: "JobIconLegioner"
+  icon: "JobIconlegionerWarrior"
   supervisors: job-name-caesar-legion-other
   canBeAntag: false
   access:
