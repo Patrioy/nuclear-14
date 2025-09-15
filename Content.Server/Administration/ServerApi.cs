@@ -354,7 +354,8 @@ public sealed partial class ServerApi : IPostInjectInit
             _sawmill.Info($"Kicked player {player.Name} ({player.UserId}) for {reason} by {FormatLogActor(actor)}");
         });
     }
-
+    
+    // Forge-Change-Start
     private async Task ActionBan(IStatusHandlerContext context, Actor actor)
     {
         var body = await ReadJson<BanActionBody>(context);
@@ -364,10 +365,29 @@ public sealed partial class ServerApi : IPostInjectInit
         await RunOnMainThread(async () =>
         {
             var data = await _locator.LookupIdByNameOrIdAsync($"{body.TargetUsername}");
-
             if (data == null)
             {
-                await context.RespondErrorAsync(HttpStatusCode.BadRequest);
+                await context.RespondJsonAsync(
+                    new { Error = "Player not found", }, 
+                    HttpStatusCode.NotFound);
+                return;
+            }
+
+            var admin = await _locator.LookupIdByNameOrIdAsync($"{actor.Guid}");
+            if (admin == null)
+            {
+                await context.RespondJsonAsync(
+                    new { Error = "Admin not found", }, 
+                    HttpStatusCode.NotFound);
+                return;
+            }
+            
+            var adminData = await _db.GetAdminDataForAsync(admin.UserId);
+            if (adminData == null)
+            {
+                await context.RespondJsonAsync(
+                    new { Error = "Is not admin", }, 
+                    HttpStatusCode.NotFound);
                 return;
             }
 
@@ -378,9 +398,9 @@ public sealed partial class ServerApi : IPostInjectInit
             reason += " (banned by admin)";
 
             if (body.Reason != null)
-                _bans.CreateServerBan(targetId, targetUsername, new NetUserId(actor.Guid),null, targetHWid, (uint)body.Minutes, (NoteSeverity)body.Severity, body.Reason);
+                _bans.CreateServerBan(targetId, targetUsername, admin.UserId,null, targetHWid, (uint)body.Minutes, (NoteSeverity)body.Severity, body.Reason);
             else
-                _bans.CreateServerBan(targetId, targetUsername, new NetUserId(actor.Guid),null, targetHWid, (uint)body.Minutes, (NoteSeverity)body.Severity, "No reason");
+                _bans.CreateServerBan(targetId, targetUsername, admin.UserId,null, targetHWid, (uint)body.Minutes, (NoteSeverity)body.Severity, "No reason");
 
             await RespondOk(context);
 
@@ -388,7 +408,6 @@ public sealed partial class ServerApi : IPostInjectInit
         });
     }
 
-    // Forge-Change-Start
     private async Task ActionPardon(IStatusHandlerContext context, Actor actor)
     {
         var body = await ReadJson<PardonActionBody>(context);
@@ -400,17 +419,24 @@ public sealed partial class ServerApi : IPostInjectInit
     
         await RunOnMainThread(async () =>
         {
-            var data = await _locator.LookupIdByNameAsync($"{body.Ckey}");
-
-            if (data == null)
+            var admin = await _locator.LookupIdByNameOrIdAsync($"{actor.Guid}");
+            if (admin == null)
             {
                 await context.RespondJsonAsync(
-                    new { Error = "Player not found", }, 
+                    new { Error = "Admin not found", }, 
+                    HttpStatusCode.NotFound);
+                return;
+            }
+            
+            var adminData = await _db.GetAdminDataForAsync(admin.UserId);
+            if (adminData == null)
+            {
+                await context.RespondJsonAsync(
+                    new { Error = "Is not admin", }, 
                     HttpStatusCode.NotFound);
                 return;
             }
 
-            var admin = data.UserId;
             var banId = body.BanId;
         
             var ban = await _db.GetServerBanAsync(banId);
@@ -431,7 +457,7 @@ public sealed partial class ServerApi : IPostInjectInit
                 return;
             }
         
-            await _db.AddServerUnbanAsync(new ServerUnbanDef(banId, admin, DateTimeOffset.Now));
+            await _db.AddServerUnbanAsync(new ServerUnbanDef(banId, admin.UserId, DateTimeOffset.Now));
 
             await context.RespondJsonAsync(
                 new { Message = "Ban successfully pardoned", });
@@ -830,7 +856,6 @@ public sealed partial class ServerApi : IPostInjectInit
     private sealed class PardonActionBody
     {
         public int BanId { get; init; }
-        public required string Ckey { get; init; }
     }
     // Forge-Change-End
 
