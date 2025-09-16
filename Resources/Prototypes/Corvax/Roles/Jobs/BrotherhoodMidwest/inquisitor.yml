@@ -7,6 +7,7 @@
   description: job-description-bos-mid-inquisitor
   playTimeTracker: BoSMidInquisitor
   requirements:
+    - !type:CharacterWhitelistRequirement
     - !type:CharacterSpeciesRequirement
       species:
       - Human
