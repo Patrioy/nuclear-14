@@ -36,7 +36,7 @@
     slot: head
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: N14ClothingOuterBase
   id: N14ClothingOuterBOSInquisitorCoat
   components:
   - type: Sprite
@@ -54,7 +54,7 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: N14ClothingOuterBase
   id: N14ClothingOuterBOSInquisitorBlackCoat
   components:
   - type: Sprite
