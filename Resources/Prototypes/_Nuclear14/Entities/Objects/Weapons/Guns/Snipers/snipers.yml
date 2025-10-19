@@ -26,6 +26,9 @@
       - N14Cartridge308Rifle
     capacity: 8
     proto: N14Cartridge308Rifle
+  - type: HeldSpeedModifier # Forge-Change
+    walkModifier: 0.90
+    sprintModifier: 0.90
   - type: FollowDistance
     backStrength: 3
   - type: StaticPrice

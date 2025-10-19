@@ -14,6 +14,9 @@
   - type: StaticPrice
     price: 100
   - type: Craftable
+  - type: HeldSpeedModifier # Forge-Change
+    walkModifier: 0.92
+    sprintModifier: 0.92
 
 - type: entity
   name: 10mm SMG

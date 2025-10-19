@@ -50,9 +50,9 @@
         whitelist:
           tags:
             - N14Cartridge308Rifle
-  - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.85
+  - type: ClothingSpeedModifier # Forge-Change
+    walkModifier: 0.80
+    sprintModifier: 0.80
   - type: HeldSpeedModifier
   - type: MagazineVisuals
     magState: mag

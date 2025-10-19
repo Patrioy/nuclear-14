@@ -38,6 +38,9 @@
     backStrength: 5
   - type: Wieldable
   - type: Craftable
+  - type: HeldSpeedModifier # Forge-Change
+    walkModifier: 0.91
+    sprintModifier: 0.91
 
 - type: entity
   name: shotgun
