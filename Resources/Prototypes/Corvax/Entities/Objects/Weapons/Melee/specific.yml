@@ -4,6 +4,10 @@
   name: whip
   description: "A painful weapon of oppression."
   components:
+  - type: StaminaDamageOnHit
+    damage: 10
+  - type: StaminaDamageOnCollide
+    damage: 10
   - type: Sprite
     sprite: Corvax/Objects/Weapons/Melee/whip.rsi
     state: icon
@@ -12,4 +16,4 @@
       collection: WhipSound
     damage:
       types:
-        Slash: 10
+        Slash: 5

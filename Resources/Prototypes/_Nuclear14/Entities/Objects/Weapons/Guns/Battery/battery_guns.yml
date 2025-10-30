@@ -40,8 +40,8 @@
       gun_magazine: !type:ContainerSlot
   - type: Craftable
   - type: HeldSpeedModifier # Forge-Change
-    walkModifier: 0.92
-    sprintModifier: 0.92
+    walkModifier: 0.91
+    sprintModifier: 0.91
 
 - type: entity
   id: N14BaseWeaponPowerCellSmall
