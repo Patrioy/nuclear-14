@@ -186,7 +186,7 @@
       - id: ClothingBeltRope
       - id: ThrowingKnife
         amount: 3
-      - id: N14Stimpak
+      - id: N14SuperStimpak
         amount: 2
       - id: N14MedkitFilled
       - id: N14FoodTinK
